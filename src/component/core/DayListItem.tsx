@@ -1,9 +1,37 @@
-import { Text } from "react-native"
+import { Text, View, StyleSheet } from "react-native";
 
 function DayListItem() {
   return (
-  <Text>Day List Item</Text>
-  )
+    <View style={styles.box}>
+      <Text style={styles.text}>1</Text>;
+    </View>
+  );
 }
 
-export default DayListItem
+const styles = StyleSheet.create({
+   
+    box: {
+      backgroundColor: "#f9ede3",
+      /*   width: 100,
+      height: 100, */
+      flex: 1,
+      aspectRatio: 1,
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: "#9b4521",
+      borderRadius: 20,
+    },
+    text: {
+      color: "#9b4521",
+      fontSize: 70,
+    },
+    content: {
+      gap: 10,
+      padding: 10,
+    },
+    column: {
+      gap: 10,
+    },
+  });
+  
+
+export default DayListItem;
