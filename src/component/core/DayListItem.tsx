@@ -14,7 +14,7 @@ function DayListItem({ day }: DayListItem) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create  ({
   box: {
     backgroundColor: "#f9ede3",
     /*   width: 100,
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   text: {
     color: "#9b4521",
     fontSize: 70,
+    fontFamily:'Inter',
   },
   content: {
     gap: 10,
