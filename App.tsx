@@ -21,16 +21,21 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    gap:10,
+    gap: 10,
   },
   box: {
-    backgroundColor: "red",
+    backgroundColor: "#f9ede3",
     width: 300,
     height: 300,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "#9b4521",
+    borderRadius: 20,
+    display:"flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   text: {
-    color: "blue",
-    fontSize: 50,
+    color: "#9b4521",
+    fontSize: 70,
   },
-
 });
