@@ -8,9 +8,9 @@ export default function App() {
     <View style={styles.container}>
       <FlatList
         data={days}
-        renderItem={() => (
+        renderItem={({ item }) => (
           <View style={styles.box}>
-            <Text style={styles.text}>{days}</Text>
+            <Text style={styles.text}>{item}</Text>
           </View>
         )}
       />
