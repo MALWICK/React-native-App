@@ -4,16 +4,16 @@ import DayListItem from "./src/component/core/DayListItem";
 
 const days = [...Array(24)].map((val, index) => index + 1);
 
+
 export default function App() {
   return (
     <View style={styles.container}>
-      x
       <FlatList
         contentContainerStyle={styles.content}
         numColumns={2}
         columnWrapperStyle={styles.column}
         data={days}
-        renderItem={({ item }) => <DayListItem />}
+        renderItem={({ item }) => <DayListItem day={item} />}
       />
       <StatusBar style="auto" />
     </View>
