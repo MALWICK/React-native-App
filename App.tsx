@@ -8,16 +8,18 @@ import {
 } from "react-native";
 import DayListItem from "./src/component/core/DayListItem";
 import { useFonts, Inter_900Black } from "@expo-google-fonts/inter";
+import * as SplashScreen from "expo-splash-screen";
 
 const days = [...Array(24)].map((val, index) => index + 1);
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
     Inter: Inter_900Black,
   });
 
-  if (!fontsLoaded && !fontError) {
-    return <ActivityIndicator />;
+  if (fontsLoaded || fontError) {
+    SplashScreen.hideAsync();
   }
   return (
     <View style={styles.container}>

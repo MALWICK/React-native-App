@@ -5,11 +5,9 @@ type DayListItem = {
 };
 
 function DayListItem({ day }: DayListItem) {
-  console.log(day, "pers");
-
   return (
     <View style={styles.box}>
-      <Text style={styles.text}>{day}</Text>;
+      <Text style={styles.text}>{day}</Text>
     </View>
   );
 }
@@ -24,6 +22,9 @@ const styles = StyleSheet.create  ({
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: "#9b4521",
     borderRadius: 20,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
     color: "#9b4521",
